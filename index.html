@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> index</title>
+</head>
+<body>
+    <h1>
+        Api
+    </h1>
+
+    <script>
+        document.getElementById("json")
+
+   fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+     
+  
+  function datos(){
+      fetch("datos.json")
+      .then(function(res){
+          return res.json()})
+      .then(json => console.log(json))
+   }
+    </script>
+    
+    </body>
+
+</html>
